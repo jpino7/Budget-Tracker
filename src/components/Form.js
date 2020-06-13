@@ -1,24 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class Form extends Component {
-    render() {
-        return (
-            <div>
+export const Form = () => {
+    return (
+        <div>
                 <h3>Add Transaction</h3>
                 <form id="form">
-                    <div class="form-control">
-                        <label for="text">Transaction: </label>
-                        <input type="text" id="text" placeholder="Enter Transaction Type" />
+                    <div className="form-control">
+                        <label htmlFor="text">Transaction: </label>
+                        <input type="text" placeholder="Enter Transaction Type" />
                     </div>
-                    <div class="form-control">
-                        <label for="amount">Amount [ (-) Withdraw | (+) Deposit ]: </label>
-                        <input type="number" id="amount" placeholder="Enter Amount"/>
+                    <div className="form-control">
+                        <label htmlFor="amount">Amount [ (-) Withdraw | (+) Deposit ]: </label>
+                        <input type="number" placeholder="Enter Amount"/>
                     </div>
-                    <button class="addTransaction-btn">Add Transaction</button>
+                    <button className="addTransaction-btn">Add Transaction</button>
                 </form>
             </div>
-        )
-    }
+    )
 }
-
-export default Form

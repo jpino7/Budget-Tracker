@@ -5,9 +5,9 @@ export class TransactionHistory extends Component {
         return (
             <div>
                 <h3>Transaction History</h3>
-                <ul id="history" class="history">
-                    <li class="minus">
-                        Cash <span>-$100 </span><button class="delete-btn">Remove</button>
+                <ul className="history">
+                    <li className="minus">
+                        Cash <span>-$100 </span><button className="delete-btn">Remove</button>
                     </li>
                 </ul>
             </div>
