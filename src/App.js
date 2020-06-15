@@ -4,11 +4,12 @@ import { Balance } from './components/Balance';
 import { DepositWithdraw } from './components/DepositWithdraw';
 import { TransactionHistory } from './components/TransactionHistory';
 import { Form } from './components/Form';
+import { GlobalProvider } from './context/GlobalState';
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Header />
       <div className="container">
         <Balance />
@@ -16,7 +17,7 @@ function App() {
         <TransactionHistory />
         <Form />
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 
