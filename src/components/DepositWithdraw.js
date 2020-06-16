@@ -18,13 +18,13 @@ export const DepositWithdraw = () => {
 
 
     return (
-        <div className="dep-wd-container" >
-            <div>
-                <h4>Deposit</h4>
+        <div className="dep-wd-container row mx-auto">
+            <div className="alert alert-success" role="alert">
+                <h4>Deposit: </h4>
     <p className="depo-plus">{deposit}</p>
             </div>
-            <div>
-                <h4>Withdraw</h4>
+            <div className="alert alert-danger" role="alert">
+                <h4>Withdraw: </h4>
     <p className="wd-minus">{withdraw}</p>
             </div>
         </div>

@@ -1,0 +1,34 @@
+body {
+    background-image: url(/images/money-background.jpg);
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-bottom: 10px;
+    background-color: honeydew !important;
+}
+
+.container {
+    text-align: center;
+}
+
+.balance, .addTransaction, .transactionHistory, .history {
+    background-color: honeydew;
+    margin-bottom: 16px;
+    border-radius: .25em;
+    padding: 12px 20px;
+}
+
+label {
+    font-weight: bold;   
+}
+
+.alert {
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+

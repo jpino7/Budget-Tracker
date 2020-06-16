@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState'
 
 
@@ -10,9 +10,11 @@ export const Balance = () => {
 
 
     return (
-        <div>
-            <h2>Balance:</h2>
-            <h3>${total}</h3>
-        </div>
+        <div className="row mx-auto">
+                <div className="balance">
+                    <h2>Balance:</h2>
+                    <h3>${total}</h3>
+                </div>
+            </div>
     )
 }

@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react'
+import React, { useState, useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState'
 
 
@@ -14,26 +14,28 @@ export const Form = () => {
         const newTransaction = {
             id: Math.floor(Math.random() * 1000),
             text,
-            amount : +amount 
+            amount: +amount
         }
 
         addTransaction(newTransaction);
     }
 
     return (
-        <div>
+        <div className="row mx-auto">
+            <div className="addTransaction">
                 <h3>Add Transaction</h3>
                 <form onSubmit={onSubmit}>
-                    <div className="form-control">
+                    <div className="form-group">
                         <label htmlFor="text">Transaction: </label>
-                        <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter Transaction Type" />
+                        <input className="form-control" type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter Transaction Type" />
                     </div>
-                    <div className="form-control">
+                    <div className="form-group">
                         <label htmlFor="amount">Amount [ (-) Withdraw | (+) Deposit ]: </label>
-                        <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter Amount"/>
+                        <input className="form-control" type="number" onChange={(e) => setAmount(e.target.value)} placeholder="Enter Amount" />
                     </div>
-                    <button className="addTransaction-btn">Add Transaction</button>
+                    <button className="addTransaction-btn btn btn-success">Add Transaction</button>
                 </form>
             </div>
+        </div>
     )
 }
