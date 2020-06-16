@@ -1,14 +1,11 @@
-body {
-    background-image: url(/images/money-background.jpg);
-    margin-bottom: 10px;
-}
-
 nav {
     margin-bottom: 10px;
     background-color: honeydew !important;
 }
 
 .container {
+    background-image: url(/images/money-bg.jpg);
+    background-size: cover;
     text-align: center;
 }
 

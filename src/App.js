@@ -9,15 +9,15 @@ import './App.css';
 
 function App() {
   return (
-   
+
     <GlobalProvider>
-      <Header />
-      <div className="container" >
-        <Balance />
-        <DepositWithdraw />
-        <Form />
-        <TransactionHistory />
-      </div>
+        <Header />
+        <div className="container">
+          <Balance />
+          <DepositWithdraw />
+          <Form />
+          <TransactionHistory />
+        </div>
     </GlobalProvider>
   );
 }
