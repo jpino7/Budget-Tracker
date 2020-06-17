@@ -1,12 +1,18 @@
+#root {
+background-color: black;
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+height: 100%;
+width: 100%;
+}
+
 nav {
     margin-bottom: 10px;
     background-color: honeydew !important;
 }
 
-.container {
-    background-image: url(/images/money-bg.jpg);
-    background-size: cover;
-    text-align: center;
+.App-logo {
+    margin-left: 5px;
 }
 
 .balance, .addTransaction, .transactionHistory, .history {
@@ -14,10 +20,6 @@ nav {
     margin-bottom: 16px;
     border-radius: .25em;
     padding: 12px 20px;
-}
-
-label {
-    font-weight: bold;   
 }
 
 .alert {
@@ -28,4 +30,12 @@ ul {
     list-style-type: none;
 }
 
+.footer {
+    background-color: honeydew;
+    padding: 5px 5px;
+}
 
+p {
+    margin-top: inherit;
+    margin-bottom: inherit;
+}
